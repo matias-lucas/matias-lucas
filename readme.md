@@ -13,7 +13,7 @@
 
 ---
 
-### <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPgoJPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIgLz4KCTxwYXRoIGZpbGw9IiM0NDQ5NzYiIGQ9Ik0xMi43MTMgMTYuNzEzUTEzIDE2LjQyNSAxMyAxNnYtNHEwLS40MjUtLjI4OC0uNzEyVDEyIDExdC0uNzEyLjI4OFQxMSAxMnY0cTAgLjQyNS4yODguNzEzVDEyIDE3dC43MTMtLjI4OG0wLThRMTMgOC40MjUgMTMgOHQtLjI4OC0uNzEyVDEyIDd0LS43MTIuMjg4VDExIDh0LjI4OC43MTNUMTIgOXQuNzEzLS4yODhNMTIgMjJxLTIuMDc1IDAtMy45LS43ODh0LTMuMTc1LTIuMTM3VDIuNzg4IDE1LjlUMiAxMnQuNzg4LTMuOXQyLjEzNy0zLjE3NVQ4LjEgMi43ODhUMTIgMnQzLjkuNzg4dDMuMTc1IDIuMTM3VDIxLjIxMyA4LjFUMjIgMTJ0LS43ODggMy45dC0yLjEzNyAzLjE3NXQtMy4xNzUgMi4xMzhUMTIgMjJtMC0ycTMuMzUgMCA1LjY3NS0yLjMyNVQyMCAxMnQtMi4zMjUtNS42NzVUMTIgNFQ2LjMyNSA2LjMyNVQ0IDEydDIuMzI1IDUuNjc1VDEyIDIwbTAtOCIgLz4KPC9zdmc+Cg==" width="24"/> Sobre mim
+### <img src="" width="24"/> Sobre mim
 
 Sou estudante de **Engenharia de Software** no **Instituto Federal de Goiás (IFG)**, atualmente no **4º período**. Trabalho como **escrevente extrajudicial** em cartório e com **gestão financeira** de dois loteamentos — e é dessa vivência prática que nascem os meus projetos: softwares e automações que resolvem problemas reais do dia a dia. 
 
@@ -27,9 +27,9 @@ Sou estudante de **Engenharia de Software** no **Instituto Federal de Goiás (IF
 
 **[Classdays](https://github.com/matias-lucas/Classdays)** é um calendário acadêmico feito para organizar a rotina de uma turma inteira: aulas da semana, provas, prazos de trabalhos e cancelamentos, tudo em um só lugar.
 
-- <img src="https://api.iconify.design/lucide:eye.svg?color=%232F80ED" width="16"/> **Visão do aluno** — calendário somente leitura, com a grade semanal e os próximos eventos por matéria
-- <img src="https://api.iconify.design/lucide:settings-2.svg?color=%232F80ED" width="16"/> **Visão do administrador** — entrada de eventos por linguagem natural (ex: *"dia 13/07 haverá prova de álgebra linear"*), interpretada automaticamente por IA e transformada em evento estruturado
-- <img src="https://api.iconify.design/lucide:link.svg?color=%232F80ED" width="16"/> **Demo ao vivo:** [class-days.vercel.app](https://class-days.vercel.app)
+<img src="https://api.iconify.design/lucide:eye.svg?color=%232F80ED" width="16"/> **Visão do aluno** — calendário somente leitura, com a grade semanal e os próximos eventos por matéria;
+<img src="https://api.iconify.design/lucide:settings-2.svg?color=%232F80ED" width="16"/> **Visão do administrador** — entrada de eventos por linguagem natural (ex: *"dia 13/07 haverá prova de álgebra linear"*), interpretada automaticamente e transformada em evento estruturado;
+<img src="https://api.iconify.design/lucide:link.svg?color=%232F80ED" width="16"/> **o vivo:** [classdays.vercel.app](https://classdays.vercel.app)
 
 <p align="left">
   <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white"/>
