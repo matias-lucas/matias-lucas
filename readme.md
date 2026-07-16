@@ -45,7 +45,7 @@ Sou estudante de **Engenharia de Software** no **Instituto Federal de Goiás (IF
 
 ---
 
-### <img src="https://api.iconify.design/solar:folder-2-bold.svg?color=%232F80ED" width="24" align="middle"/> Outros projetos
+### <img src="https://api.iconify.design/solar:folder-2-bold.svg?color=%232F80ED" width="24" align="top"/> Outros projetos
 
 - **[Automação de boletos](https://github.com/matias-lucas/Automacao_QIS)** — sistema que automatiza a conferência e baixa de boletos no Lotes 3.0, com cálculo de juros/multa e rotina de validação antes da execução real;
 - **[proj_algb](https://github.com/matias-lucas/proj_algb)** *(descontinuado)* — projeto de software em C para resolução de sistemas lineares;
@@ -53,7 +53,7 @@ Sou estudante de **Engenharia de Software** no **Instituto Federal de Goiás (IF
 
 ---
 
-### <img src="https://api.iconify.design/solar:programming-bold.svg?color=%232F80ED" width="24" align="middle"/> Stack & Ferramentas
+### <img src="https://api.iconify.design/solar:programming-bold.svg?color=%232F80ED" width="24" align="top"/> Stack & Ferramentas
 
 <p align="left">
   <img src="https://skillicons.dev/icons?i=html,css,js,ts,c,git,github,vscode" />
@@ -64,7 +64,7 @@ Sou estudante de **Engenharia de Software** no **Instituto Federal de Goiás (IF
 
 ---
 
-### <img src="https://api.iconify.design/solar:chart-2-bold.svg?color=%232F80ED" width="24" align="middle"/> GitHub Stats
+### <img src="https://api.iconify.design/solar:chart-2-bold.svg?color=%232F80ED" width="24" align="top"/> GitHub Stats
 
 <p align="center">
   <img src="https://github-stats-extended.vercel.app/api?username=matias-lucas&show_icons=true&hide_border=true&title_color=2F80ED&icon_color=2F80ED&text_color=24292F&bg_color=00000000" height="165"/>
@@ -77,7 +77,7 @@ Sou estudante de **Engenharia de Software** no **Instituto Federal de Goiás (IF
 
 ---
 
-### <img src="https://api.iconify.design/solar:letter-bold.svg?color=%232F80ED" width="24" align="middle"/> Contato
+### <img src="https://api.iconify.design/solar:letter-bold.svg?color=%232F80ED" width="24" align="top"/> Contato
 
 <table>
   <tr>
