@@ -1,0 +1,63 @@
+name: Atualizar estatísticas do perfil
+
+# Gera o quadro de atividade e a animação de contribuições (claro e escuro)
+# e publica no branch `output`, de onde o README carrega as imagens.
+on:
+  schedule:
+    - cron: "17 6 * * *" # todo dia, 03:17 em Brasília
+  workflow_dispatch:
+  push:
+    paths:
+      - ".github/workflows/profile-stats.yml"
+      - "scripts/stats.mjs"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  gerar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Quadro de atividade
+        run: node scripts/stats.mjs dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_LOGIN: ${{ github.repository_owner }}
+
+      - name: Animação de contribuições
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-light.svg?color_snake=#2E5AD6&color_dots=#E3EAF4,#BCCBE6,#8BA5DD,#5479DA,#2E5AD6
+            dist/snake-dark.svg?color_snake=#6F95FF&color_dots=#152A4C,#22427A,#3260B8,#4C7DE6,#6F95FF
+
+      # Fora do main, só confere que tudo gerou (o resultado fica nos artefatos da execução).
+      - name: Guardar prévia
+        if: github.ref != 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: previa-estatisticas
+          path: dist
+
+      - name: Publicar no branch output
+        if: github.ref == 'refs/heads/main'
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+          commit_message: "Atualiza estatísticas do perfil"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
