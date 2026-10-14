@@ -60,20 +60,18 @@ function mockUser() {
   };
 }
 
-// Sequências: dias seguidos com pelo menos uma contribuição.
-// Hoje ainda sem contribuição não quebra a sequência atual.
-function streaks(days) {
+// Dias com pelo menos uma contribuição e a maior sequência de dias seguidos.
+// (A sequência atual ficou de fora: zera a cada dia sem commit e diz pouco.)
+function activity(days) {
+  let active = 0;
   let longest = 0;
   let run = 0;
   for (const d of days) {
+    if (d.contributionCount > 0) active++;
     run = d.contributionCount > 0 ? run + 1 : 0;
     longest = Math.max(longest, run);
   }
-  let current = 0;
-  let i = days.length - 1;
-  if (i >= 0 && days[i].contributionCount === 0) i--;
-  for (; i >= 0 && days[i].contributionCount > 0; i--) current++;
-  return { current, longest };
+  return { active, longest };
 }
 
 const THEMES = {
@@ -85,7 +83,7 @@ const COPY = {
   pt: {
     title: "Atividade no GitHub, últimos 12 meses",
     updated: (d) => `atualizado em ${d}`,
-    rows: ["Contribuições", "Commits", "Pull requests", "Sequência atual", "Maior sequência", "Repositórios públicos"],
+    rows: ["Contribuições", "Commits", "Pull requests", "Dias com contribuição", "Maior sequência", "Repositórios públicos"],
     days: (n) => `${n} ${n === 1 ? "dia" : "dias"}`,
     date: (iso) => iso.split("-").reverse().join("/"),
     num: (n) => n.toLocaleString("pt-BR"),
@@ -93,7 +91,7 @@ const COPY = {
   en: {
     title: "GitHub activity, last 12 months",
     updated: (d) => `updated ${d}`,
-    rows: ["Contributions", "Commits", "Pull requests", "Current streak", "Longest streak", "Public repositories"],
+    rows: ["Contributions", "Commits", "Pull requests", "Days with contributions", "Longest streak", "Public repositories"],
     days: (n) => `${n} ${n === 1 ? "day" : "days"}`,
     date: (iso) => new Date(`${iso}T12:00:00Z`).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" }),
     num: (n) => n.toLocaleString("en-US"),
@@ -113,7 +111,7 @@ function render(stats, lang, theme) {
     c.num(stats.total),
     c.num(stats.commits),
     c.num(stats.prs),
-    c.days(stats.current),
+    c.num(stats.active),
     c.days(stats.longest),
     c.num(stats.repos),
   ];
@@ -159,7 +157,7 @@ const stats = {
   prs: cc.totalPullRequestContributions,
   repos: user.repositories.totalCount,
   today: days.at(-1)?.date ?? new Date().toISOString().slice(0, 10),
-  ...streaks(days),
+  ...activity(days),
 };
 
 fs.mkdirSync(OUT, { recursive: true });

@@ -62,7 +62,7 @@ A pair project for my Linear Algebra course, written in C: it reads, solves and 
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/matias-lucas/matias-lucas/output/stats-en-dark.svg">
-  <img alt="GitHub activity over the last 12 months: contributions, commits, pull requests, streaks and public repositories" src="https://raw.githubusercontent.com/matias-lucas/matias-lucas/output/stats-en-light.svg" width="100%">
+  <img alt="GitHub activity over the last 12 months: contributions, commits, pull requests, days with contributions, longest streak and public repositories" src="https://raw.githubusercontent.com/matias-lucas/matias-lucas/output/stats-en-light.svg" width="100%">
 </picture>
 
 <picture>

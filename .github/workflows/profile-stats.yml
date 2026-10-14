@@ -23,9 +23,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: 22
 
@@ -43,21 +43,22 @@ jobs:
             dist/snake-light.svg?color_snake=#2E5AD6&color_dots=#E3EAF4,#BCCBE6,#8BA5DD,#5479DA,#2E5AD6
             dist/snake-dark.svg?color_snake=#6F95FF&color_dots=#152A4C,#22427A,#3260B8,#4C7DE6,#6F95FF
 
-      # Fora do main, só confere que tudo gerou (o resultado fica nos artefatos da execução).
+      # Fora do main, só confere que tudo gerou: o resultado fica nos artefatos
+      # da execução e a publicação roda em modo de teste, sem enviar nada.
       - name: Guardar prévia
         if: github.ref != 'refs/heads/main'
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: previa-estatisticas
           path: dist
 
       - name: Publicar no branch output
-        if: github.ref == 'refs/heads/main'
-        uses: crazy-max/ghaction-github-pages@v4
+        uses: crazy-max/ghaction-github-pages@v5
         with:
           target_branch: output
           build_dir: dist
           keep_history: false
           commit_message: "Atualiza estatísticas do perfil"
+          dry_run: ${{ github.ref != 'refs/heads/main' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

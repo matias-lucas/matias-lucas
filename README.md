@@ -62,7 +62,7 @@ Trabalho em dupla da disciplina de Álgebra Linear, em C: lê, resolve e classif
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/matias-lucas/matias-lucas/output/stats-pt-dark.svg">
-  <img alt="Atividade no GitHub nos últimos 12 meses: contribuições, commits, pull requests, sequências e repositórios públicos" src="https://raw.githubusercontent.com/matias-lucas/matias-lucas/output/stats-pt-light.svg" width="100%">
+  <img alt="Atividade no GitHub nos últimos 12 meses: contribuições, commits, pull requests, dias com contribuição, maior sequência e repositórios públicos" src="https://raw.githubusercontent.com/matias-lucas/matias-lucas/output/stats-pt-light.svg" width="100%">
 </picture>
 
 <picture>
