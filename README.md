@@ -18,7 +18,7 @@ Estudo Engenharia de Software no **Instituto Federal de Goiás (IFG)**, hoje no 
 
 É dessa rotina que saem os meus projetos: quando um processo é repetitivo, confuso ou fácil de errar, tento transformá-lo em software. O Classdays nasceu para organizar a agenda da minha turma; a automação de boletos, para acabar com as baixas manuais nos loteamentos.
 
-Uso IA (Claude Code) no meu dia a dia de desenvolvimento. Ela acelera a escrita do código. A minha parte é entender o problema, definir as regras de negócio, revisar o que entra e testar antes de publicar.
+Uso IA (Claude Code) no meu dia a dia de desenvolvimento. Para acelerar a escrita e auxiliar no entendimento e correção de códigos.
 
 **Estou procurando estágio em desenvolvimento web.** Se a sua equipe tem uma vaga, vamos conversar.
 
@@ -74,5 +74,5 @@ Trabalho em dupla da disciplina de Álgebra Linear, em C: lê, resolve e classif
 
 ---
 
-<p align="center">Procurando estágio em desenvolvimento web e aberto a conversar sobre automação e software para problemas reais.<br>
+<p align="center">Procurando estágio em desenvolvimento, aberto a conversar sobre softwares para resolução de problemas reais.<br>
 O jeito mais rápido de falar comigo é pelo <a href="https://linkedin.com/in/matiaslucas">LinkedIn</a> ou por <a href="mailto:lucasmatiias2208@gmail.com">e-mail</a>.</p>
