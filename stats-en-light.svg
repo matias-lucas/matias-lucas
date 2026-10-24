@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 1202 228" width="1202" height="228" role="img" aria-label="GitHub activity, last 12 months: Contributions 726, Commits 372, Pull requests 3, Days with contributions 53, Longest streak 7 days, Public repositories 5">
+  <title>GitHub activity, last 12 months: Contributions 726, Commits 372, Pull requests 3, Days with contributions 53, Longest streak 7 days, Public repositories 5</title>
+  <style>
+    text{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif;font-variant-numeric:tabular-nums}
+    .h{font-size:21px;font-weight:650;fill:#14294D}
+    .u{font-size:17px;fill:#5B6F90}
+    .l{font-size:20px;fill:#5B6F90}
+    .v{font-size:22px;font-weight:650;fill:#14294D}
+  </style>
+  <rect width="1200" height="226" rx="14" fill="#F4F7FB" stroke="#C9D5E6" stroke-width="1.2"/>
+  <circle cx="34" cy="32" r="6" fill="#2E5AD6"/>
+  <text x="52" y="39" class="h">GitHub activity, last 12 months</text>
+  <text x="1168" y="38" class="u" text-anchor="end">updated Oct 24, 2026</text>
+  <g stroke="#C9D5E6" stroke-width="1.2" fill="none"><path d="M0 64H1200"/><path d="M0 118H1200M0 172H1200" stroke-dasharray="2 5"/><path d="M600 64V226"/></g>
+  <text x="32" y="98" class="l">Contributions</text><text x="568" y="98" class="v" text-anchor="end">726</text>
+  <text x="32" y="152" class="l">Commits</text><text x="568" y="152" class="v" text-anchor="end">372</text>
+  <text x="32" y="206" class="l">Pull requests</text><text x="568" y="206" class="v" text-anchor="end">3</text>
+  <text x="632" y="98" class="l">Days with contributions</text><text x="1168" y="98" class="v" text-anchor="end">53</text>
+  <text x="632" y="152" class="l">Longest streak</text><text x="1168" y="152" class="v" text-anchor="end">7 days</text>
+  <text x="632" y="206" class="l">Public repositories</text><text x="1168" y="206" class="v" text-anchor="end">5</text>
+</svg>
